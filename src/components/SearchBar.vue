@@ -27,16 +27,29 @@ export default {
 
 
 <style lang="scss" scoped>
+@import "@/assets/global.scss";
+
 .search-box {
 	width: fit-content;
-	background-color: #2f3640;
+	background-color: #22292f;
 	height: 40px;
 	border-radius: 40px;
 	padding: 10px;
+	margin-top: 15px;
+	margin: 5px auto;
+	color: #fff;
 
 	&:hover .search-input {
-		width: 240px;
+		width: 50vw;
 		padding: 0 6px;
+
+		@include desktop {
+			width: 33vw;
+		}
+	}
+
+	&:not(:hover) .search-input {
+		transition-delay: 1s;
 	}
 
 	&:hover .search-button {
@@ -44,20 +57,22 @@ export default {
 	}
 
 	.search-input {
+		color: #fff;
 		border: none;
 		outline: none;
 		background: none;
 		float: left;
 		padding: 0;
-		color: #fff;
+		transition-delay: 1s;
 		font-size: 16px;
 		transition: 0.4s all;
 		line-height: 40px;
 		width: 0;
+		text-align: center;
 	}
 
 	.search-button {
-		color: #1abc9c;
+		color: color(primaryBlue);
 		background: inherit;
 		border: none;
 		float: right;
@@ -66,6 +81,7 @@ export default {
 		line-height: 40px;
 		text-align: center;
 		border-radius: 50%;
+		cursor: pointer;
 	}
 }
 

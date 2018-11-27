@@ -1,0 +1,6 @@
+// This file is used for importing common scss files that will be used across most files
+// If a file is not used across most files it must explicitly loaded in the Vue file
+// Note, this file still must be explivility loaded in each Vue file, it will just reduce
+// the amount ofcalls
+@import "@/assets/mixins.scss";
+@import "@/assets/colors.scss";
