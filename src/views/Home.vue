@@ -1,9 +1,9 @@
 <template>
     <div class="home">
-        <h1 class="text-center white title">Weather App</h1>
-        <h4 class="text-center white description">Simply enter your location below to get started</h4>
+        <h1 class="text-center title">Weather App</h1>
+        <h4 class="text-center description">Simply enter your location below to get started</h4>
         <SearchBar/>
-        <div class="container">
+        <div class="">
             <br>
             <br>
             <br>
@@ -47,7 +47,6 @@ export default {
 }
 .container {
     margin: 25px auto;
-    background-color: #fff;
     width: 85vw;
 }
 </style>

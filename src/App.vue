@@ -28,12 +28,8 @@ export default {
 }
 body {
     color: #22292f;
-    // background-image: url("~@/assets/background.svg")
 }
 .text-center {
     text-align: center;
-}
-.white {
-    // color: #fff;
 }
 </style>
