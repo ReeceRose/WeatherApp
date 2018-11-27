@@ -24,7 +24,10 @@
 </template>
 
 <script>
+import axios from '@/axios.js'
+
 import SearchBar from '@/components/SearchBar.vue'
+
 export default {
     name: 'Home',
     components: {
