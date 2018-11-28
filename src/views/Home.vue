@@ -1,37 +1,39 @@
 <template>
     <div class="home">
         <h1 class="text-center title">Weather App</h1>
-        <h4 class="text-center description">Simply enter your location below to get started</h4>
+        <h4 class="text-center description">Simply enter your location below to get started (Canada only)</h4>
         <SearchBar/>
-        <div class="">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+        <div class="weather-container">
+            <h1 class="text-center location-weather">{{ currentLocation }} Weather</h1>
+
         </div>
     </div>
 </template>
 
 <script>
 import axios from '@/axios.js'
+import keys from '@/assets/keys.json'
 
 import SearchBar from '@/components/SearchBar.vue'
 
 export default {
     name: 'Home',
+    data() {
+        return {
+            json:''
+        }
+    },
     components: {
         SearchBar
+    },
+    computed: {
+        currentLocation() {
+			return this.$store.getters.getLocation
+        }
+    },
+    beforeMount() {
+        this.json = axios.get(`weather?q=${this.currentLocation},ca&units=metric&APPID=${keys.weatherApi}`)
+        console.log(this.currentLocation);
     }
 }
 </script>
@@ -48,8 +50,17 @@ export default {
 .description {
     margin-bottom: 40px;
 }
-.container {
-    margin: 25px auto;
-    width: 85vw;
+
+.weather-container {
+    display: grid;
+    margin-top: 40px;
+
+    .location-weather {
+        grid-template-columns: 1fr;
+    }
+
+    .metric {
+        justify-self: end;       
+    }
 }
 </style>
