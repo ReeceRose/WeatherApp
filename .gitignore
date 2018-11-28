@@ -20,4 +20,4 @@ yarn-error.log*
 *.sln
 *.sw*
 
-**/assets/keys.json
+**/keys.json
