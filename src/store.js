@@ -5,7 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
-        location: ''
+        // default is Toronto, this will get overriden if previously set but will provide a fallback
+        location: 'Toronto'
     },
     getters: {
         getLocation(state) {

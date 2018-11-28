@@ -1,6 +1,6 @@
 <template>
 	<form class="search-box" @submit.prevent="setLocation">
-		<input type="text" v-model="currentLocation" class="search-input" placeholder="Enter your location">
+		<input type="text" :value="currentLocation" class="search-input" placeholder="Enter your location">
 		<button type="submit" class="search-button">
 			<i class="fas fa-search"></i>
 		</button>
@@ -9,14 +9,9 @@
 
 <script>
 export default {
-    data() {
-        return {
-            location: ''
-        }
-    },
-    methods: {
-        setLocation() {
-			this.$store.dispatch('setLocation', this.location)
+	methods: {
+		setLocation(event) {
+			this.$store.dispatch("setLocation", event.target[0].value)
 		}
 	},
 	computed: {
@@ -41,7 +36,7 @@ export default {
 	margin: 5px auto;
 	color: #fff;
 
-	&:hover .search-input {
+	&:hover .search-input, &:focus-within .search-input {
 		width: 50vw;
 		padding: 0 6px;
 

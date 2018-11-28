@@ -5,7 +5,7 @@
         <SearchBar/>
         <div class="weather-container">
             <h1 class="text-center location-weather">{{ currentLocation }} Weather</h1>
-
+            <p class="text-center error" v-if="error">Unfortunately the weather cannot be loaded</p>
         </div>
     </div>
 </template>
@@ -20,7 +20,24 @@ export default {
     name: 'Home',
     data() {
         return {
-            json:''
+            json:'',
+            error: ''
+        }
+    },
+    methods: {
+        getWeather(location) {
+            axios
+                .get(`weather?q=${location},ca&units=metric&APPID=${keys.weatherApi}`)
+                .then(response => {
+                    // reset any previous errors
+                    this.error = ''
+                    // set json
+                    this.json = response.data
+                    console.log(response.data);
+                })
+                .catch(error => {
+                    this.error = error;
+                });
         }
     },
     components: {
@@ -28,13 +45,14 @@ export default {
     },
     computed: {
         currentLocation() {
-			return this.$store.getters.getLocation
+            const location = this.$store.getters.getLocation
+            this.getWeather(location)
+			return location
         }
     },
-    beforeMount() {
-        this.json = axios.get(`weather?q=${this.currentLocation},ca&units=metric&APPID=${keys.weatherApi}`)
-        console.log(this.currentLocation);
-    }
+    // beforeMount() {
+    //     this.getWeather(this.currentLocation)
+    // }
 }
 </script>
 
@@ -59,8 +77,8 @@ export default {
         grid-template-columns: 1fr;
     }
 
-    .metric {
-        justify-self: end;       
+    .error {
+        color: rgb(255, 0, 0);
     }
 }
 </style>
