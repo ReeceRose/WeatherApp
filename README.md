@@ -9,6 +9,9 @@ Weather App
 
 
 <h4 align="center">
+    
+[View live demo here](https://weatherapp.reecerose.com)    
+
     Weather App made using VueJS and <a href="https://openweathermap.org/">Open Weather Map</a>
 </h4>
 
@@ -17,9 +20,6 @@ Weather App
     <a href="#key-features">Features</a> •
     <a href="#setup">Setup</a> •
     <a href="#credits">Credits</a>
-
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-[View live demo here](https://weatherapp.reecerose.com)    
 </p>
 
 <!-- Gif here -->
@@ -63,3 +63,5 @@ This software uses the following resources:
 ---
 
 Copyright 2018 © <a href="http://reecerose.com" target="_blank">Reece Rose</a>.
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) 
