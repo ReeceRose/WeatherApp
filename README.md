@@ -2,9 +2,6 @@
     <a href="https://reecerose.com/projects/weatherapp">
         <img    src="https://static.reecerose.com/images/projects/WeatherApp/logo.gif" title="Weather App" alt="WeatherApp" width="400">
     </a>
-
-Weather App 
-<!-- <br> -->
 </h1>
 
 
@@ -19,8 +16,6 @@ Weather App made using VueJS and <a href="https://openweathermap.org/">Open Weat
     <a href="#credits">Credits</a>
 </p>
 
-<!-- Gif here -->
-![]()
 ## About
 Simple weather application made using VueJS. The application will use a previously set location or the default of Toronto and use a public API to grab current weather and forecasted weather. The main focus of this project was to demonstrate the basic use of calling APIs, storing information using Vuex, and to make a responsive site using no CSS libraries.
 
