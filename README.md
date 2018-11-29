@@ -9,23 +9,23 @@ Weather App
 
 
 <h4 align="center">
-    
-[View live demo here](https://weatherapp.reecerose.com)    
-
-
 Weather App made using VueJS and <a href="https://openweathermap.org/">Open Weather Map</a>
-
 </h4>
 
 <p align="center">
     <a href="#about">About</a> •
-    <a href="#key-features">Features</a> •
+    <a href="#features">Features</a> •
     <a href="#setup">Setup</a> •
     <a href="#credits">Credits</a>
+    
+    
+[View live demo here](https://weatherapp.reecerose.com)    
 </p>
 
 <!-- Gif here -->
 ![]()
+## About
+
 
 ## Features
  <!-- - Current weather data for your city (Current tem) -->
