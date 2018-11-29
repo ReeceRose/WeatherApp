@@ -6,7 +6,7 @@
         </div>
         {{ new Date(data.dt*1000).toLocaleString() }}
         <hr>
-        Current Temperature: {{ data.main.temp }} °C<br>
+        Current Temperature: {{ data.main.temp }} °C <br>
         Minimum temperature: {{ data.main.temp_min }} °C<br>
         Maximum temperature: {{ data.main.temp_max }} °C
     </div>
@@ -30,7 +30,7 @@ export default {
     border-radius: 5px;
     border: 1px solid #808080;
     width: fit-content;
-    max-width: fit-content;
+    width: 290px;
     line-height: 1.75em;
 
     .weather-icon {

@@ -12,12 +12,12 @@
                     <WeatherIcon class="weather-icon" :icon="weatherData.weather[0].icon"/>
                 </div>
                 <div class="weather-current text-center">
-                    <div>
+                    <div class="card">
                         Current temperature: {{ weatherData.main.temp }} °C<br>
                         Minimum temperature: {{ weatherData.main.temp_min }} °C<br>
                         Maximum temperature: {{ weatherData.main.temp_max }} °C
                     </div>
-                    <div>
+                    <div class="card">
                         Current pressure: {{ weatherData.main.pressure /10}} kPa<br>
                         Current humidity: {{ weatherData.main.humidity }}%<br>
                         Current wind speed: {{ weatherData.wind.speed }} KM/H
@@ -143,12 +143,24 @@ export default {
 .weather-current {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 992px;
+    grid-gap: 0 !important;
+    max-width: 625px;
     margin: 15px auto;
+
+    .card {
+        margin: 0 auto;
+        margin-top: 15px;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #808080;
+        width: 250px;
+        line-height: 1.75em;
+    }
+
 
     @include mobile {
         grid-template-columns: 1fr;
-        grid-row-gap: 15px;
+        grid-row-gap: 15px
     }
 }
 
