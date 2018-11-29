@@ -12,7 +12,9 @@ Weather App
     
 [View live demo here](https://weatherapp.reecerose.com)    
 
-    Weather App made using VueJS and <a href="https://openweathermap.org/">Open Weather Map</a>
+
+Weather App made using VueJS and <a href="https://openweathermap.org/">Open Weather Map</a>
+
 </h4>
 
 <p align="center">
