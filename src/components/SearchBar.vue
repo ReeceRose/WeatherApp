@@ -49,7 +49,7 @@ export default {
 		transition-delay: 1s;
 	}
 
-	&:hover .search-button {
+	&:hover .search-button, &:focus-within .search-button {
 		background-color: #fff;
 	}
 

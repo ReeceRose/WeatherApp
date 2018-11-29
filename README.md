@@ -1,13 +1,12 @@
 <h1 align="center">
     <a href="https://reecerose.com/projects/weatherapp">
-        <img    src="https://metrouk2.files.wordpress.com/2018/02/ios_weather_icons-e1519660727179.png" title="Weather App" alt="WeatherApp" width="400">
+        <img    src="https://static.reecerose.com/images/projects/WeatherApp/logo.gif" title="Weather App" alt="WeatherApp" width="400">
     </a>
 
-Weather App
-<br>
-
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+Weather App 
+<!-- <br> -->
 </h1>
+
 
 <h4 align="center">
     Weather App made using VueJS and <a href="https://openweathermap.org/">Open Weather Map</a>
@@ -18,12 +17,18 @@ Weather App
     <a href="#key-features">Features</a> •
     <a href="#setup">Setup</a> •
     <a href="#credits">Credits</a>
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+[View live demo here](https://weatherapp.reecerose.com)    
 </p>
 
 <!-- Gif here -->
 ![]()
 
 ## Features
+ <!-- - Current weather data for your city (Current tem) -->
+ - Extensive weather data and forcasted weather for your city
+ - Location will be saved and automatically loaded
 
 ---
 
