@@ -17,23 +17,20 @@ Weather App made using VueJS and <a href="https://openweathermap.org/">Open Weat
     <a href="#features">Features</a> •
     <a href="#setup">Setup</a> •
     <a href="#credits">Credits</a>
-    
-    
-[View live demo here](https://weatherapp.reecerose.com)    
 </p>
 
 <!-- Gif here -->
 ![]()
 ## About
+Simple weather application made using VueJS. The application will use a previously set location or the default of Toronto and use a public API to grab current weather and forecasted weather. The main focus of this project was to demonstrate the basic use of calling APIs, storing information using Vuex, and to make a responsive site using no CSS libraries.
 
+[View live demo here](https://weatherapp.reecerose.com)    
 
 ## Features
- <!-- - Current weather data for your city (Current tem) -->
- - Extensive weather data and forcasted weather for your city
+ - Extensive weather data and forecasted weather for your city
  - Location will be saved and automatically loaded
 
 ---
-
 
 ## Setup
 
