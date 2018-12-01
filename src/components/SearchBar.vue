@@ -1,7 +1,7 @@
 <template>
 	<form class="search-box" @submit.prevent="setLocation">
-		<input type="text" :value="currentLocation" class="search-input" placeholder="Enter your location">
-		<button type="submit" class="search-button">
+		<input type="text" :value="currentLocation" class="search-input" placeholder="Enter your location" aria-label="Enter your location">
+		<button type="submit" class="search-button" value="Send your location" aria-label="Send your location">
 			<i class="fas fa-search"></i>
 		</button>
 	</form>
