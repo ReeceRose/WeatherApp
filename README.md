@@ -19,7 +19,7 @@ Weather App made using VueJS and <a href="https://openweathermap.org/">Open Weat
 ## About
 Simple weather application made using VueJS. The application will use a previously set location or the default of Toronto and use a public API to grab current weather and forecasted weather. The main focus of this project was to demonstrate the basic use of calling APIs, storing information using Vuex, and to make a responsive site using no CSS libraries.
 
-[View live demo here](https://weatherapp.reecerose.com)    
+[View live demo here](https://weather.reecerose.com)    
 
 ## Features
  - Extensive weather data and forecasted weather for your city
@@ -56,6 +56,6 @@ This software uses the following resources:
 
 ---
 
-Copyright 2018 © <a href="http://reecerose.com" target="_blank">Reece Rose</a>.
+Copyright 2019 © <a href="http://reecerose.com" target="_blank">Reece Rose</a>.
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) 
